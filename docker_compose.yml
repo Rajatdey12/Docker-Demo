@@ -10,6 +10,6 @@ services:
     ports:
       - "8012:8080"
   demo_openjdk:
-    image: openjdk
+    image: adoptopenjdk/openjdk8
 
 

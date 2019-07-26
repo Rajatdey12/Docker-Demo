@@ -1,4 +1,5 @@
 FROM openjdk
-ADD /target/my-app-1.0-SNAPSHOT.jar my-app-1.0-SNAPSHOT.jar
+COPY pom.xml /
+ADD DockerRepo/target/docker-spring-boot.jar docker-spring-boot.jar
 EXPOSE 8087
 ENTRYPOINT ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"] 
